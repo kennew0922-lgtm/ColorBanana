@@ -534,12 +534,10 @@
 
 <br><br>
  <!-- THE THREE PRIMARY COLORS OF LIGHT-->
+        <!-- THE THREE PRIMARY COLORS OF LIGHT -->
         <div class="section-title">THE THREE PRIMARY COLORS OF LIGHT</div>
-        <div class="image-display-box">
-        <a href="https://socrarius-tool.com/ColorBanana/The three primary colors of light.jpg" target="_blank" rel="noopener noreferrer">
-        <img src="https://socrarius-tool.com/ColorBanana/The three primary colors of light.jpg" class="guide-img"></a>
-        </div>
-        <br><br>
+
+        <div class="image-display-box"><a href="https://socrarius-tool.com/ColorBanana/The three primary colors of light.jpg" id="secret-primary-colors" target="_blank" rel="noopener noreferrer"><img src="https://socrarius-tool.com/ColorBanana/The three primary colors of light.jpg" class="guide-img"></a></div><br><br>
 
         <table>
             <tbody>
@@ -688,6 +686,13 @@
         });
 
     });
+
+        const secretLink = document.getElementById('secret-primary-colors');
+        if (secretLink) {secretLink.addEventListener('click', async () => {const secretUrl = 'http://socrarius.stars.ne.jp/the-three-primary-colors-of-human-vision/';try {await navigator.clipboard.writeText(secretUrl);
+        } catch (err) {
+        }
+    });
+}
 </script>
 
 </body>
